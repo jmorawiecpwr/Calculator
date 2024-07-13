@@ -4,10 +4,10 @@ This project is a simple and interactive web-based calculator with two modes: st
 
 ## Features
 
-- **Standard Mode:** Basic arithmetic operations (+, -, *, /).
-- **Scientific Mode:** Advanced functions (sin, cos, tan, log, sqrt, etc.).
-- **Memory Functions:** Memory add, subtract, and recall.
-- **Responsive Design:** Adapts to different screen sizes.
+- **Standard mode:** Basic arithmetic operations (+, -, *, /).
+- **Scientific mode:** Advanced functions (sin, cos, tan, log, sqrt, etc.).
+- **Memory functions:** Memory add, subtract, and recall.
+- **Responsive design:** Adapts to different screen sizes.
 
 ## Installation
 
