@@ -1,0 +1,139 @@
+#mode-switch {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background-color: rgba(11, 9, 9, 0.896);
+    border-radius: 50px 50px 0 0;
+}
+
+#mode-switch button {
+    flex: 1;
+    height: 50px;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+    color: orange;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#mode-switch button:first-child {
+    border-radius: 50px 0 0 0;
+}
+
+#mode-switch button:last-child {
+    border-radius: 0 50px 0 0;
+}
+
+#mode-switch button.active {
+    background-color: orange;
+    color: white;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(87, 81, 81);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(132, 126, 126);
+}
+
+button:active {
+    background-color: rgb(168, 176, 183);
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(11, 9, 9, 0.896);
+    border-radius: 50px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: rgba(86, 81, 81, 0.195);
+    color: azure;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+
+.operator {
+    background-color: rgb(228, 142, 12);
+}
+
+.operator:hover {
+    background-color: rgb(235, 180, 50);
+}
+
+.operator:active {
+    background-color: rgb(249, 208, 111);
+}
+
+button.memory {
+    background-color: rgb(51, 102, 153);
+}
+
+button.memory:hover {
+    background-color: rgb(85, 136, 204);
+}
+
+button.memory:active {
+    background-color: rgb(102, 153, 204);
+}
+
+button.scientific {
+    display: none;
+    background-color: rgb(51, 153, 102);
+}
+
+button.scientific:hover {
+    background-color: rgb(85, 204, 136);
+}
+
+button.scientific:active {
+    background-color: rgb(102, 204, 153);
+}
+
+body.scientific-mode .scientific {
+    display: block;
+}
+
+#mode-switch button:not(.active):hover {
+    background-color: rgb(246, 202, 119);
+    color: rgb(255, 255, 255);  
+}
+
+#mode-switch button:not(.active):active {
+    background-color: rgb(255, 132, 0); 
+    color: rgb(255, 255, 255); 
+}

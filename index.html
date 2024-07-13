@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator">
+        <div id="mode-switch">
+            <button id="standard-button" onclick="setMode('standard')">Standard</button>
+            <button id="scientific-button" onclick="setMode('scientific')">Scientific</button>
+        </div>
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')" class="operator">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="operator">C</button>
+            <button onclick="memoryAdd()" class="memory">M+</button>
+            <button onclick="memorySub()" class="memory">M-</button>
+            <button onclick="recall()" class="memory">MR</button>
+            <button onclick="applyScientificFunction(Math.sin)" class="scientific">sin</button>
+            <button onclick="applyScientificFunction(Math.cos)" class="scientific">cos</button>
+            <button onclick="applyScientificFunction(Math.tan)" class="scientific">tan</button>
+            <button onclick="applyScientificFunction(Math.log)" class="scientific">log</button>
+            <button onclick="applyScientificFunction(Math.sqrt)" class="scientific">√</button>
+            <button onclick="appendToDisplay('^')" class="scientific">^</button>
+            <button onclick="appendConstant(Math.PI)" class="scientific">π</button>
+            <button onclick="appendConstant(Math.E)" class="scientific">e</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
